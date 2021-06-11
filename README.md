@@ -13,3 +13,11 @@ Originally there were seven different datasets one for each year ranging from 20
 
 Distribution of Each Offensive Formation: 
 
+<img src="https://github.com/Varunpm17/pbp-analysis/blob/main/images/FormationDistribution.png" width="450" height="450">
+
+Shotgun Formation Usage Compared to Total Formation Usage Per Team:
+
+<img src="https://github.com/Varunpm17/pbp-analysis/blob/main/images/ShotgunsBarComparisonPerTeam.png" width="600" height="450">
+
+## Analysis
+The primary goal was to test whether or not teams with high shotgun usage fared better than balanced teams. I grouped the teams into two categories if the teams shogtgun formation count / total formation count was greater than the mean shogtgun formation count / total formation count then they would be classified as a heavy shotgun user team. Once I had created these two groups I performed a Two Sample Approximate Test of Population Means (Welsh's t-test) after taking 350 samples from each group (each sample representing total offensive yards in a game). With an alpha threshold of 0.2 the p-value I obtained was 0.5110 which far exceeded the threshold. Thus I was able to conclude that there is no difference in success between shotgun heavy offenses and balanced offenses. 
